@@ -12,15 +12,15 @@ export default {
   googleSheets: {
     sheets: [
       {
-        name: 'example',
-        id: '1lc_jXGPfVxTi3dfJmFEVg-3xOuRIvdpZsbg6ki76_l8',
+        name: 'forensic',
+        id: '1ej3kEtANGYsEBUCTfWsIR0UhTSJIuXFHLYspti2sgHo',
         tabs: {
-          export_events: [BP.deeprows, BP.rows],
-          export_categories: [BP.groups, BP.rows],
-          export_narratives: BP.rows,
-          export_sources: BP.deepids,
-          export_sites: BP.rows,
-          export_tags: BP.tree
+          welfare_export_events: [BP.deeprows, BP.rows],
+          welfare_export_categories: [BP.groups, BP.rows],
+          welfare_export_narratives: BP.rows,
+          welfare_export_sources: BP.deepids,
+          welfare_export_sites: BP.rows,
+          welfare_export_tags: BP.tree
         }
       }
     ]
