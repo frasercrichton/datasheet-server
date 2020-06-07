@@ -57,7 +57,7 @@ const passUrls = [
   // /
   '/api/',
   // /blueprints
-  '/api/blueprints',
+  '/api/blueprints'
   // /:sheet/:tab/:resource
   '/api/forensic/welfare_export_events/rows',
   // /:sheet/:tab/:resource/:frag

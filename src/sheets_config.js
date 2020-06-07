@@ -9,7 +9,7 @@ import BP from './lib/blueprinters'
 // FA
 // 1ej3kEtANGYsEBUCTfWsIR0UhTSJIuXFHLYspti2sgHo
 export default {
-  googleSheets: {
+  gsheets: {
     sheets: [
       {
         name: 'forensic',
