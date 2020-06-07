@@ -59,9 +59,9 @@ const passUrls = [
   // /blueprints
   '/api/blueprints'
   // /:sheet/:tab/:resource
-  '/api/forensic/welfare_export_events/rows',
+  // '/api/forensic/welfare_export_events/rows',
   // /:sheet/:tab/:resource/:frag
-  '/api/forensic/welfare_export_events/rows/1'
+  // '/api/forensic/welfare_export_events/rows/1'
 ]
 
 const failUrls = [
