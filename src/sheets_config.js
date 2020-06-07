@@ -15,12 +15,12 @@ export default {
         name: 'forensic',
         id: '1ej3kEtANGYsEBUCTfWsIR0UhTSJIuXFHLYspti2sgHo',
         tabs: {
-          welfare_export_events: [BP.deeprows, BP.rows],
-          welfare_export_categories: [BP.groups, BP.rows],
-          welfare_export_narratives: BP.rows,
-          welfare_export_sources: BP.deepids,
-          welfare_export_sites: BP.rows,
-          welfare_export_tags: BP.tree
+          moraldrift_export_events: [BP.deeprows, BP.rows],
+          moraldrift_export_categories: [BP.groups, BP.rows],
+          moraldrift_export_narratives: BP.rows,
+          moraldrift_export_sources: BP.deepids,
+          moraldrift_export_sites: BP.rows,
+          moraldrift_export_tags: BP.tree
         }
       }
     ]
