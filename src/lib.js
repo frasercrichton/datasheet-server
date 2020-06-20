@@ -3,6 +3,9 @@ import BP from './lib/blueprinters'
 function prefixedTabs (prefix, cfg) {
   if (!cfg) cfg = {}
   const prf = key => cfg[key] ? `${prefix}_` : ''
+  console.log(cfg)
+  console.log(prefix)
+
   return {
     [`${prf('events')}export_events`]: BP.deeprows,
     [`${prf('categories')}export_categories`]: [BP.groups, BP.rows],
