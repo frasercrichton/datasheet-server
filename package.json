@@ -9,7 +9,6 @@
     "start": "node dist",
     "lint": "standard \"src/**/*.js\" \"test/**/*.js\"",
     "test-watch": "ava --watch",
-    "test": "ava --verbose",
     "travis-encrypt": "./scripts/encrypt.sh"
   },
   "repository": {
