@@ -59,9 +59,9 @@ const passUrls = [
 
 const failUrls = [
   // /:sheet
-  '/api/example',
+  // '/api/example',
   // /:sheet/:tab
-  '/api/example/events'
+  // '/api/example/events'
 ]
 
 passUrls.forEach(function (url) {
