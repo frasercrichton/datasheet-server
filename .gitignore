@@ -4,6 +4,7 @@
 /node_modules
 .DS_Store
 *.swp
+.vscode
 
 .env
 *service-account-key\.json
@@ -14,3 +15,4 @@ tags
 tags.lock
 tags.temp
 src/config.js
+src/local.config.js
