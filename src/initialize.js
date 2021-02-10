@@ -2,7 +2,7 @@ import StoreJson from './models/StoreJson'
 import fetchers from './lib/Fetcher'
 import Controller from './lib/Controller'
 import R from 'ramda'
-
+import { exec } from 'child_process'
 const isntNull = n => n !== null
 const filterNull = ls => R.filter(isntNull, ls)
 const flattenfilterNull = ls => filterNull(R.flatten(ls))
@@ -44,6 +44,18 @@ export default callback => {
     .catch(err => {
       console.log(err)
       console.log('env.', process.env)
+
+      const { exec } = require('child_process')
+      exec('printenv', (err, stdout, stderr) => {
+        if (err) {
+          // some err occurred
+          console.error(err)
+        } else {
+          // the *entire* stdout and stderr (buffered)
+          console.log(`stdout: ${stdout}`)
+          console.log(`stderr: ${stderr}`)
+        }
+      })
 
       console.log(
         `ERROR: the server couldn't connect to all of the sheets you provided. Ensure you have granted access to ${
