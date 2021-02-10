@@ -48,7 +48,7 @@ export default callback => {
       console.log(
         `ERROR: the server couldn't connect to all of the sheets you provided. Ensure you have granted access to ${
           process.env.SERVICE_ACCOUNT_EMAIL
-        } on ALL listed sheets.`
+        } on ALL listed sheets xxxxxx.`
       )
     })
 }

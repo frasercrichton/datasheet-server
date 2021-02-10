@@ -7,3 +7,6 @@ automatic_scaling:
 
 env_variables:
   NODE_ENV: "development"
+  PORT: ${_PORT}
+  SERVICE_ACCOUNT_EMAIL: ${_SERVICE_ACCOUNT_EMAIL}
+  SERVICE_ACCOUNT_PRIVATE_KEY: ${_SERVICE_ACCOUNT_PRIVATE_KEY}
