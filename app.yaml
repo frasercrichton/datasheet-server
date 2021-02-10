@@ -1,5 +1,5 @@
 # If you have any process.env variables, this is where they should be specified.
-service: datasheet-server
+service: datasheet-server-1
 runtime: nodejs12
 instance_class: F1
 automatic_scaling:
@@ -7,6 +7,5 @@ automatic_scaling:
 
 env_variables:
   NODE_ENV: "development"
-  PORT: ${_PORT}
-  SERVICE_ACCOUNT_EMAIL: ${_SERVICE_ACCOUNT_EMAIL}
+  SERVICE_ACCOUNT_EMAIL: "forensic-265906@appspot.gserviceaccount.com"
   SERVICE_ACCOUNT_PRIVATE_KEY: ${_SERVICE_ACCOUNT_PRIVATE_KEY}

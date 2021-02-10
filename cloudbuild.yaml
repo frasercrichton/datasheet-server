@@ -20,4 +20,4 @@ steps:
   - 'SERVICE_ACCOUNT_PRIVATE_KEY=${_SERVICE_ACCOUNT_PRIVATE_KEY}'
   timeout: '1600s'
 
-tags: ['curfew-bell', 'datasheet-server', 'project-name']
+tags: ['forensic-architecture', 'datasheet-server', 'project-name']
