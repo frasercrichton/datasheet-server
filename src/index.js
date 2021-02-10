@@ -20,13 +20,13 @@ app.set('view engine', '.hbs')
 // enable cross origin requests explicitly in development
 if (process.env.NODE_ENV === 'development') {
   const cors = require('cors')
-    console.log('env.SERVICE_ACCOUNT_EMAIL', process.env.SERVICE_ACCOUNT_EMAIL)
   
   console.log('Enabling CORS in development...')
   app.use(cors())
 }
 
 const config = process.env
+console.log('env.SERVICE_ACCOUNT_EMAIL', process.env.SERVICE_ACCOUNT_EMAIL)
 
 initialize(controller => {
   app.use(
