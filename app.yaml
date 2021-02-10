@@ -8,4 +8,3 @@ automatic_scaling:
 env_variables:
   NODE_ENV: "development"
   SERVICE_ACCOUNT_EMAIL: ${_SERVICE_ACCOUNT_EMAIL}
-  SERVICE_ACCOUNT_EMAIL1: ${SERVICE_ACCOUNT_EMAIL}
