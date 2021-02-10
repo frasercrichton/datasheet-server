@@ -26,7 +26,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 const config = process.env
-console.log('env.SERVICE_ACCOUNT_EMAIL', process.env.SERVICE_ACCOUNT_EMAIL)
 
 initialize(controller => {
   app.use(

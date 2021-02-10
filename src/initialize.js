@@ -43,6 +43,8 @@ export default callback => {
     })
     .catch(err => {
       console.log(err)
+      console.log('env.', process.env)
+
       console.log(
         `ERROR: the server couldn't connect to all of the sheets you provided. Ensure you have granted access to ${
           process.env.SERVICE_ACCOUNT_EMAIL
