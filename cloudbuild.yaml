@@ -8,6 +8,7 @@ steps:
 - name: node
   entrypoint: npm
   args: ['run', 'build']
+  args: ['echo', 'xxxxxx ${_SERVICE_ACCOUNT_EMAIL}']
   env:
   - 'SERVICE_ACCOUNT_EMAIL=${_SERVICE_ACCOUNT_EMAIL}'
   - 'SERVICE_ACCOUNT_PRIVATE_KEY=${_SERVICE_ACCOUNT_PRIVATE_KEY}'
