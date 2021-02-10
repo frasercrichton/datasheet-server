@@ -163,7 +163,6 @@ class GsheetFetcher extends Fetcher {
 
   /** returns a Promise that resolves if access is granted to the account, and rejects otherwise. */
   authenticate (env) {
-    console.log('env.SERVICE_ACCOUNT_EMAIL', env.SERVICE_ACCOUNT_EMAIL)
     const googleAuth = new google.auth.JWT(env.SERVICE_ACCOUNT_EMAIL, null, env.SERVICE_ACCOUNT_PRIVATE_KEY, [
       'https://www.googleapis.com/auth/spreadsheets'
     ])
