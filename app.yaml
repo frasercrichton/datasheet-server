@@ -8,4 +8,3 @@ automatic_scaling:
 env_variables:
   NODE_ENV: "development"
   SERVICE_ACCOUNT_EMAIL: "forensic-265906@appspot.gserviceaccount.com"
-  SERVICE_ACCOUNT_PRIVATE_KEY: ${_SERVICE_ACCOUNT_PRIVATE_KEY}
