@@ -12,12 +12,12 @@ steps:
   - 'PORT=${_PORT}'
   - 'SERVICE_ACCOUNT_EMAIL=${_SERVICE_ACCOUNT_EMAIL}'
   - 'SERVICE_ACCOUNT_PRIVATE_KEY=${_SERVICE_ACCOUNT_PRIVATE_KEY}'
-  - name: 'gcr.io/cloud-builders/gcloud'
+- name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy']
   env:
-    - 'PORT=${_PORT}'
-    - 'SERVICE_ACCOUNT_EMAIL=${_SERVICE_ACCOUNT_EMAIL}'
-    - 'SERVICE_ACCOUNT_PRIVATE_KEY=${_SERVICE_ACCOUNT_PRIVATE_KEY}'
+  - 'PORT=${_PORT}'
+  - 'SERVICE_ACCOUNT_EMAIL=${_SERVICE_ACCOUNT_EMAIL}'
+  - 'SERVICE_ACCOUNT_PRIVATE_KEY=${_SERVICE_ACCOUNT_PRIVATE_KEY}'
   timeout: '1600s'
 
 tags: ['curfew-bell', 'datasheet-server', 'project-name']
