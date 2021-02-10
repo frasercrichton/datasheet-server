@@ -1,5 +1,5 @@
 # If you have any process.env variables, this is where they should be specified.
-service: datasheet-server
+service: curfew-bell-datasheet-server
 runtime: nodejs12
 instance_class: F1
 automatic_scaling:
