@@ -11,6 +11,7 @@ steps:
   env:
   - 'SERVICE_ACCOUNT_EMAIL=123${_SERVICE_ACCOUNT_EMAIL}'
   - 'SERVICE_ACCOUNT_PRIVATE_KEY=xyz${_SERVICE_ACCOUNT_PRIVATE_KEY}'
+  - 'NODE_ENV=development'
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy']
   env:
