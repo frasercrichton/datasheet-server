@@ -9,8 +9,8 @@ steps:
   entrypoint: npm
   args: ['run', 'build']
   env:
-  - 'SERVICE_ACCOUNT_EMAIL=${_SERVICE_ACCOUNT_EMAIL}'
-  - 'SERVICE_ACCOUNT_PRIVATE_KEY=${_SERVICE_ACCOUNT_PRIVATE_KEY}'
+  - 'SERVICE_ACCOUNT_EMAIL=123${_SERVICE_ACCOUNT_EMAIL}'
+  - 'SERVICE_ACCOUNT_PRIVATE_KEY=xyz${_SERVICE_ACCOUNT_PRIVATE_KEY}'
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy']
   env:
