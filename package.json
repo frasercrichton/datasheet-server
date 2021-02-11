@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "env NODE_ENV=development nodemon -w src --exec \"babel-node src\"",
     "experiment": "echo \"ffff\"$PWD",
-    "build": "./print-env.sh && env NODE_ENV=production SERVICE_ACCOUNT_EMAIL=$SERVICE_ACCOUNT_EMAIL SERVICE_ACCOUNT_PRIVATE_KEY='$(SERVICE_ACCOUNT_PRIVATE_KEY)' npx babel src -d dist",
+    "build": "npx babel src -d dist",
     "start": "node dist",
     "lint": "standard \"src/**/*.js\" \"test/**/*.js\"",
     "test-watch": "ava --watch",
